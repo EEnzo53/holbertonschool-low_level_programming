@@ -15,7 +15,7 @@ for (e = '0'; e <= '9'; e++)
 	{
 		putchar(',');
 		putchar(' ');
-    }
+	}
 }
 putchar('\n');
 	return (0);
