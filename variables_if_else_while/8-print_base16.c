@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Display all single digit numbers from 0 to 9 without use char
+ * main - Display the 9 first numbers and the 6 first letters
  *
  * Return: Always 0 (Success)
  */
