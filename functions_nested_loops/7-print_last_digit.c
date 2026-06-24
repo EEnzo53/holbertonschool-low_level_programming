@@ -10,6 +10,7 @@ int n
 {
 	int last;
 	last = n % 10;
+
 	_putschar(last);
-	return(last);
+	return (last);
 }
