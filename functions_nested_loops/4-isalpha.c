@@ -8,7 +8,7 @@
  */
 int _isalpha(int c);
 {
-	if (c = ['a'-'z'] && c = ['A'-'Z'])
+	if (c >= 'a-A' && c <= 'z-Z')
 		return (1),
 	return (0);
 }
