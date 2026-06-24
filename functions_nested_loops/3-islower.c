@@ -9,12 +9,12 @@ int _islower(int c);
 {
 	int c;
 
-	for (c = 48; c <= 122; c++ )
+	for (c = 48; c <= 122; c++)
 	{
 		_putchar(c);
 	}
 
-	if(c = [a-z])
+	if(c =[a-z])
 	{
 		return (1);
 		else
