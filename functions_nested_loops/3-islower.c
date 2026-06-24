@@ -14,7 +14,7 @@ int _islower(int c);
 		_putchar(c);
 	}
 
-	if(c =[a-z])
+	if (c = [a - z])
 	{
 		return (1);
 		else
