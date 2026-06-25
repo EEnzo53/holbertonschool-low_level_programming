@@ -23,7 +23,6 @@ void times_table(void)
 			if (ligne != 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
