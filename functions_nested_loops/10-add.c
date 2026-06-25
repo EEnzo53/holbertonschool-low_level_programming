@@ -6,7 +6,7 @@
  * b - chiffre 2
  * Return: affiche le résultat
  */
-int add(int a,int b)
+int add(int a, int b)
 {
 	int result;
 
