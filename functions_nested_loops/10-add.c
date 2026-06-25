@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * add - Additione 2 chiffre
- * a - chiffre 1
- * b - chiffre 2
- * Return: affiche le résultat
+ * add - adds two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: sum of a and b
  */
 int add(int a, int b)
 {
