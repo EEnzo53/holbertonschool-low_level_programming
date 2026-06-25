@@ -19,7 +19,7 @@ void times_table(void)
 			}
 			else if (ligne * colonnes <= 9)
 			{
-				_putchar(ligne * colonnes + '0')
+				_putchar(ligne * colonnes + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
