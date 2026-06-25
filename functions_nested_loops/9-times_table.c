@@ -12,7 +12,7 @@ void times_table(void)
 	{
 		for (ligne = 0; ligne <= 9; ligne++)
 		{
-			if (ligne * colonnes <= 57)
+			if (ligne * colonnes <= 9)
 			{
 				_putchar(ligne * colonnes + '0');
 				_putchar(',');
