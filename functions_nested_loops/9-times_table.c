@@ -14,16 +14,16 @@ void times_table(void)
 		{
 			if (ligne < 10)
 			{
-			_putchar((ligne * colonnes) / 10 + '0');
-			_putchar((ligne * colonnes) % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
+				_putchar((ligne * colonnes) / 10 + '0');
+				_putchar((ligne * colonnes) % 10 + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
-			_putchar_(ligne * colonnes + '0');
-			_putchar(',');
-			_putchar(' ');
+				_putchar_(ligne * colonnes + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 	}
