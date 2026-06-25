@@ -8,9 +8,9 @@ void times_table(void)
 	int ligne;
 	int colonnes;
 
-	for (ligne = '0'; ligne <= '9'; ligne++)
+	for (colonnes = 0; colonnes <= 9; colonnes++)
 	{
-		for (colonnes = '0'; colonnes <= '9'; colonnes++)
+		for (ligne = 0; ligne <= 9; ligne++)
 		{
 			_putchar(ligne * colonnes + 0);
 			_putchar(',');
