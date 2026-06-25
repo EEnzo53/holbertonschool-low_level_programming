@@ -18,10 +18,10 @@ for (colonnes = 0; colonnes <= 9; colonnes++)
 		{
 			_putchar((ligne * colonnes) / 10 + '0');
 			_putchar((ligne * colonnes) % 10 + '0');
-		{
-		if (ligne != 9)
 		}
-		_putchar(',');
+		if (ligne != 9)
+		{
+			_putchar(',');
 			_putchar(' ');
 		}
 	_putchar('\n');
