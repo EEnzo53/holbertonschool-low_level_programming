@@ -8,29 +8,22 @@ void times_table(void)
 	int ligne;
 	int colonnes;
 
-	for (colonnes = 0; colonnes <= 9; colonnes++)
-	{
-		for (ligne = 0; ligne <= 9; ligne++)
-		{
-			if (ligne != 9)
-			{
-				_putchar(ligne * colonnes + '0');
-				_putchar(' ');
-			}
-			else if (ligne * colonnes <= 9)
-			{
-				_putchar(ligne * colonnes + '0');
-				_putchar(',');
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar((ligne * colonnes) / 10 + '0');
-				_putchar((ligne * colonnes) % 10 + '0');
-				_putchar(',');
-				_putchar(' ');
-			}
+for (colonnes = 0; colonnes <= 9; colonnes++)
+
+    for (ligne = 0; ligne <= 9; ligne++)
+    {
+        if (ligne * colonnes < 10)
+            _putchar(ligne * colonnes + '0');
+        else
+        {
+            _putchar((ligne * colonnes) / 10 + '0');
+            _putchar((ligne * colonnes) % 10 + '0');
+        {
+        if (ligne != 9)
 		}
-		_putchar('\n');
+		_putchar(',');
+			_putchar(' ');
+		}
 	}
+    _putchar('\n');
 }
