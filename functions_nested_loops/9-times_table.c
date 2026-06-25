@@ -13,8 +13,8 @@ void times_table(void)
 		for (colonnes = 0; colonnes <= 9; colonnes++)
 		{
 			_putchar(ligne * colonnes + 0);
-			_putchar(,);
-			_putchar( );
+			_putchar(',');
+			_putchar(' ');
 		}
 	}
 }
