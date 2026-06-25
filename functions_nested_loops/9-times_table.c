@@ -17,7 +17,7 @@ void times_table(void)
 				_putchar(ligne * colonnes + '0');
 				_putchar(',');
 				_putchar(' ');
-				_putchar('/n');
+				/**_putchar('/n');*/
 			}
 			else
 			{
@@ -25,7 +25,7 @@ void times_table(void)
 				_putchar((ligne * colonnes) % 10 + '0');
 				_putchar(',');
 				_putchar(' ');
-				_putchar('/n');
+				/*_putchar('/n');*/
 			}
 		}
 	}
