@@ -1,7 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
+ *add - Additione 2 chiffre
  *
+ * Return: affiche le résultat
  */
 int add(int a,int b)
 {
@@ -9,5 +11,5 @@ int add(int a,int b)
 
 	result = a + b;
 
-	return(result);
+	return (result);
 }
