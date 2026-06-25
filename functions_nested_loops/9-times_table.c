@@ -25,5 +25,5 @@ for (colonnes = 0; colonnes <= 9; colonnes++)
 			_putchar(' ');
 		}
 	}
-    _putchar('\n');
+	_putchar('\n');
 }
