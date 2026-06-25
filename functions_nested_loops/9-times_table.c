@@ -12,7 +12,7 @@ void times_table(void)
 	{
 		for (ligne = 0; ligne <= 9; ligne++)
 		{
-			if (ligne < 10)
+			if (ligne <= '9')
 			{
 				_putchar(ligne * colonnes + '0');
 				_putchar(',');
@@ -20,8 +20,8 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar((ligne * colonnes) / 10 + '0');
-				_putchar((ligne * colonnes) % 10 + '0');
+				_putchar((ligne * colonnes) / '10' + '0');
+				_putchar((ligne * colonnes) % '10' + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
