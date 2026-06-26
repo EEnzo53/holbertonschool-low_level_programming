@@ -15,7 +15,7 @@ void times_table(void)
 			if (ligne * colonnes <= 9)
 			{
 				_putchar(result % 10 + '0');
-				if (ligne != 8)
+				if (ligne != 9)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -26,7 +26,7 @@ void times_table(void)
 			{
 				_putchar(result / 10 + '0');
 				_putchar(result % 10 + '0');
-				if (ligne != 8)
+				if (ligne != 9)
 				{
 					_putchar(',');
 					_putchar(' ');
