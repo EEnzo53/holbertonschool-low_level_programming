@@ -11,34 +11,21 @@ void times_table(void)
 	{
 		for (ligne = 0; ligne <= 9; ligne++)
 		{
-			result = (ligne * colonnes);
-			if (colonnes * 9 >= 10)
+			result = ligne * colonnes;
+			if (result >= 10)
 			{
-				if (result >= 10)
-				{
-					_putchar(result / 10 + '0');
-					_putchar(result % 10 + '0');
-				}
-				else
-				{
-					_putchar(' ');
-					_putchar(result + '0');
-				}
-				if (ligne != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar(result / 10 + '0');
+				_putchar(result % 10 + '0');
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar(result + '0');
-				if (ligne != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
+			}
+			if (ligne != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
