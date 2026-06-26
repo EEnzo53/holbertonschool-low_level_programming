@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * times_table - Display tables of multiplications
  */
