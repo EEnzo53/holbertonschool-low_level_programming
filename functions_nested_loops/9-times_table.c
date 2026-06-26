@@ -17,19 +17,19 @@ void times_table(void)
 				_putchar(result % 10 + '0');
 				if (ligne != 9)
 				{
-						_putchar(',');
-						_putchar(' ');
+					_putchar(',');
+					_putchar(' ');
 				}
 			}
 			else if (ligne * colonnes >= 10)
 			{
 				_putchar(result / 10 + '0');
 				_putchar(result % 10 + '0');
-					if (ligne != 9)
-					{
-						_putchar(',');
-						_putchar(' ');
-					}
+				if (ligne != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
