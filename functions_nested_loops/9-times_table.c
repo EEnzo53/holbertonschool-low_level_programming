@@ -20,7 +20,7 @@ void times_table(void)
 			}
 			else if (ligne * colonnes >= 10)
 			{
-				_putchar(result % 50 + '0');
+				_putchar(result % 10 + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
@@ -28,4 +28,3 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
-
