@@ -18,8 +18,8 @@ void times_table(void)
 				if (ligne != 9)
 				{
 					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					_putchar('.');
+					_putchar('.');
 				}
 			}
 			else if (ligne * colonnes >= 10)
@@ -29,6 +29,7 @@ void times_table(void)
 				if (ligne != 9)
 				{
 					_putchar(',');
+					_putchar('.');
 				}
 			}
 		}
