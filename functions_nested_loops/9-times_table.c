@@ -15,15 +15,21 @@ void times_table(void)
 			if (ligne * colonnes <= 9)
 			{
 				_putchar(result % 10 + '0');
-				_putchar(',');
-				_putchar(' ');
+				if (ligne != 9)
+				{
+						_putchar(',');
+						_putchar(' ');
+				}
 			}
-			else if (ligne * colonnes >= 9)
+			else if (ligne * colonnes >= 10)
 			{
 				_putchar(result / 10 + '0');
 				_putchar(result % 10 + '0');
-				_putchar(',');
-				_putchar(' ');
+					if (ligne != 9)
+					{
+						_putchar(',');
+						_putchar(' ');
+					}
 			}
 		}
 		_putchar('\n');
