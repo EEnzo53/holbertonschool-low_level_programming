@@ -1,4 +1,3 @@
-```c
 #include "main.h"
 /**
  * times_table - Display tables of multiplications
