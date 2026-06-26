@@ -1,5 +1,5 @@
+```c
 #include "main.h"
-
 /**
  * times_table - Display tables of multiplications
  */
@@ -11,21 +11,26 @@ void times_table(void)
 	{
 		for (ligne = 0; ligne <= 9; ligne++)
 		{
-			result = ligne * colonnes;
-			if (result >= 10)
+			result = (ligne * colonnes);
+			if (ligne * colonnes <= 9)
+			{
+				_putchar(result % 10 + '0');
+				if (ligne != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+			}
+			else if (ligne * colonnes >= 10)
 			{
 				_putchar(result / 10 + '0');
 				_putchar(result % 10 + '0');
-			}
-			else
-			{
-				_putchar(' ');
-				_putchar(result + '0');
-			}
-			if (ligne != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
+				if (ligne != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
