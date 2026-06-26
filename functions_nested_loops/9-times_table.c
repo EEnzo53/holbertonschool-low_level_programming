@@ -14,13 +14,13 @@ void times_table(void)
 			result = (ligne * colonnes);
 			if (ligne * colonnes <= 10)
 			{
-				_putchar(result / 10 + '0');
+				_putchar(result % 10 + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
 			else if (ligne * colonnes >= 10)
 			{
-				_putchar(result % 10 + '0');
+				_putchar(result / 10 + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
