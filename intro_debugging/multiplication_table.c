@@ -1,6 +1,10 @@
 #include <stdio.h>
-
-int print_table(int size)
+/**
+ * print_table - print multiplication table from table 1 to table 4
+ *
+ * Return: Always 0
+ */
+void print_table(int size)
 {
 	int row, col;
 
@@ -12,6 +16,7 @@ int print_table(int size)
 		}
 		printf("\n");
 	}
+	return (0);
 }
 
 /* -- DO NOT Modify the code below this line -- */
@@ -19,5 +24,4 @@ int print_table(int size)
 int main(void)
 {
     print_table(4);
-    return (0);
 }
