@@ -1,19 +1,23 @@
 #include <stdio.h>
+/**
+ * @n - Nombre que i doit atteindre
+ *
+ * Return: sum for the loop else 0
+*/
 
 int sum_to_n(int n)
 {
-    int i;
-    int sum = 0;
+	int i;
+	int sum = 0;
 
-    // Loop until i <= n to include n in the sum
-    for (i = 1; i <= n; i++)
-        sum += i;
+	for (i = 1; i <= n; i++)
+		sum += i;
 
-    return sum; // Return the sum, not n
+	return (sum);
 }
 
 int main(void)
 {
-    printf("%d\n", sum_to_n(10));
-    return 0;
+	printf("%d\n", sum_to_n(10));
+	return (0);
 }
