@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * row_sum - calculate the sum of a multiplication table row
+ * @row: row number
+ * @cols: number of columns
+ *
+ * Return: sum of values in the row
+ */
 int row_sum(int row, int cols)
 {
 	int c;
@@ -8,31 +15,40 @@ int row_sum(int row, int cols)
 	for (c = 1; c <= cols; c++)
 		sum += row * c;
 
-	return sum;
+	return (sum);
 }
 
+/**
+ * total_sum - calculate the sum of all values in a multiplication table
+ * @rows: number of rows
+ * @cols: number of columns
+ *
+ * Return: total sum of all rows
+ */
 int total_sum(int rows, int cols)
 {
 	int r;
 	int total = 0;
-	int current = 0;
 
 	for (r = 1; r <= rows; r++)
-    {
-			int row_total = row_sum(r, cols);
-		printf("r = %d, row_sum = %d, current = %d -> ", r, row_total, current); // Print before update
-		current += row_total;
-		printf("%d\n", current); // Print after update
-		total += current;
+	{
+		int row_total = row_sum(r, cols);
+		total += row_total;
+
 	}
 
-	return total;
+	return (total);
 }
 
 /* -- DO NOT Modify the code below this line -- */
 
+/**
+ * main - entry point for the program
+ *
+ * Return: 0 on success
+ */
 int main(void)
 {
 	printf("%d\n", total_sum(3, 3));
-	return 0;
+	return (0);
 }
