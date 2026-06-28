@@ -1,14 +1,15 @@
 #include <stdio.h>
-
-
-
+/**
+ * print_table - Prints a multiplication table of size x size
+ * @size: The size of the multiplication table
+ */
 void print_table(int size)
 {
 	int row, col;
 
 	for (row = 1; row <= size; row++)
 	{
-		for (col = 1; col <= size; col++) // Removed the extra increment
+		for (col = 1; col <= size; col++)
 		{
 			printf("%d ", row * col);
 		}
@@ -18,8 +19,13 @@ void print_table(int size)
 
 /* -- DO NOT Modify the code below this line -- */
 
+/**
+ * main - Entry point for multiplication table program
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 	print_table(4);
-	return 0;
+	return (0);
 }
