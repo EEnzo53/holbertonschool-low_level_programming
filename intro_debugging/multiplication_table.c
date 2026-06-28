@@ -28,5 +28,4 @@ void print_table(int size)
 int main(void)
 {
 	print_table(4);
-	return (0);
 }
