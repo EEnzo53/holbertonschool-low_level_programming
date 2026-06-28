@@ -19,10 +19,10 @@ void print_table(int size)
 	return (0);
 }
 
-/* -- main - display table -- */
+/* main - display table */
 
 int main(void)
 {
-    print_table(4);
+	print_table(4);
 	return (0);
 }
