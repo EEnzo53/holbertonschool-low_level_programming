@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * print_table - print multiplication table from table 1 to table 4
+ * print_table - print an size x size multiplication table
+ * @size: the number of rows and columns of the table (must be > 0)
  *
- * Return: Always 0
+ * Description: prints the multiplication table from 1 to size
  */
 void print_table(int size)
 {
