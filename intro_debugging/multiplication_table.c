@@ -19,8 +19,11 @@ void print_table(int size)
 	return (0);
 }
 
-/* main - display table */
-
+/**
+ * main - Entry point. Display multiplication table of size 4
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
 	print_table(4);
