@@ -50,45 +50,54 @@ static unsigned long reduce_checksum(void)
     return (sum);
 }
 
-int main(void)
+	int main(void)
+
 {
-	clock_t start;
-	clock_t end;
+    clock_t start;
+    clock_t end;
 
-	double total_seconds;
-	double bt_seconds;
-	double p_seconds;
-	double r_seconds;
+    clock_t start_build;
+    clock_t end_build;
 
-	unsigned long checksum;
+    clock_t start_process;
+    clock_t end_process;
 
-start = clock();
-clock_t b_start = clock();
-build_dataset();
-clock_t b_end = clock();
-bt_seconds = (double)(b_end - b_start) / CLOCKS_PER_SEC;
+    clock_t start_reduce;
+    clock_t end_reduce;
 
-clock_t p_start = clock();
-process_dataset();
-clock_t p_end = clock();
-p_seconds = (double)(p_end - p_start) / CLOCKS_PER_SEC;
+    double elapsed_total;
+    double elapsed_build;
+    double elapsed_process;
+    double elapsed_reduce;
 
-clock_t r_start = clock();
-checksum = reduce_checksum();
-clock_t r_end = clock();
-r_seconds = (double)(r_end - r_start) / CLOCKS_PER_SEC;
+    unsigned long checksum;
 
+    initialize_data();
 
-end = clock();
-total_seconds = (double)(end - start) / CLOCKS_PER_SEC;
+    start = clock();
 
-if (checksum == 0ul)
-	printf("impossible\n");
+    start_build = clock();
+    build_dataset();
+    end_build = clock();
+    elapsed_build = (double)(end_build - start_build) / CLOCKS_PER_SEC;
 
-printf("TOTAL seconds: %.6f\n", total_seconds);
-printf("BUILD_DATA seconds: %.6f\n", bt_seconds);
-printf("PROCESS seconds: %.6f\n", p_seconds);
-printf("REDUCE seconds: %.6f\n", r_seconds);
+    start_process = clock();
+    process_dataset();
+    end_process = clock();
+    elapsed_process = (double)(end_process - start_process) / CLOCKS_PER_SEC;
 
-return (0);
+    start_reduce = clock();
+    checksum = reduce_checksum();
+    end_reduce = clock();
+    elapsed_reduce = (double)(end_reduce - start_reduce) / CLOCKS_PER_SEC;
+
+    end = clock();
+    elapsed_total = (double)(end - start) / CLOCKS_PER_SEC;
+
+    printf("TOTAL seconds: %.6f\n", elapsed_total);
+    printf("BUILD_DATA seconds: %.6f\n", elapsed_build);
+    printf("PROCESS seconds: %.6f\n", elapsed_process);
+    printf("REDUCE seconds: %.6f\n", elapsed_reduce);
+
+    return (0);
 }
