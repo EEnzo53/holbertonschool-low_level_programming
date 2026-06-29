@@ -55,9 +55,9 @@ int main(void)
 	unsigned long checksum;
 	clock_t start;
 	clock_t end;
-	double bt_seconds;
+	int bt_seconds;
 	double r_seconds;
-	double p_seconds;
+	int p_seconds;
 	double total_seconds;
 
     /* Students must add clock-based timing and print required lines. */
@@ -69,12 +69,12 @@ int main(void)
 	start = clock();
 	bt_seconds = build_dataset();
 	end = clock();
-	total_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
+	total_seconds = (double)(end - start) / (double)CLOCKS_PER_SEC;
 
 	start = clock();
 	p_seconds = process_dataset();
 	end = clock();
-	r_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
+	r_seconds = (double)(end - start) / (double)CLOCKS_PER_SEC;
 
     if (checksum == 0ul)
 		printf("impossible\n");
