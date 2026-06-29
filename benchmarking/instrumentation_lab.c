@@ -55,10 +55,10 @@ int main(void)
 	unsigned long checksum;
 	clock_t start;
 	clock_t end;
-	double BT_seconds;
-	double R_seconds;
-	int P_seconds;
-	int TOTAL_seconds;
+	double bt_seconds;
+	double r_seconds;
+	double p_seconds;
+	double total_seconds;
 
     /* Students must add clock-based timing and print required lines. */
 
@@ -67,22 +67,22 @@ int main(void)
     checksum = reduce_checksum();
 
 	start = clock();
-	TOTAL_seconds = count_even_naive();
+	total_seconds = count_even_naive();
 	end = clock();
-	BT_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
+	bt_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
 
 	start = clock();
-	P_seconds = count_even_single_pass();
+	p_seconds = count_even_single_pass();
 	end = clock();
-	R_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
+	r_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
 
     if (checksum == 0ul)
 		printf("impossible\n");
 
-	printf("TOTAL seconds: %.6f\n", TOTAL_seconds);
-	printf("BUILD_DATA seconds: %.6f seconds\n", BT_seconds);
-	printf("PROCESS seconds: %.6f\n", P_seconds);
-	printf("REDUCE seconds: %.6f\n", R_secondes);
+	printf("TOTAL seconds: %.6f\n", total_seconds);
+	printf("BUILD_DATA seconds: %.6f seconds\n", bt_seconds);
+	printf("PROCESS seconds: %.6f\n", p_seconds);
+	printf("REDUCE seconds: %.6f\n", r_seconds);
 
     return (0);
 }
