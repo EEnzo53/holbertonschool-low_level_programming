@@ -62,17 +62,17 @@ int main(void)
 
     /* Students must add clock-based timing and print required lines. */
 
-    build_dataset();
-    process_dataset();
-    checksum = reduce_checksum();
+	build_dataset();
+	process_dataset();
+	checksum = reduce_checksum();
 
 	start = clock();
-	total_seconds = count_even_naive();
+	bt_seconds = build_dataset();
 	end = clock();
-	bt_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
+	total_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
 
 	start = clock();
-	p_seconds = count_even_single_pass();
+	p_seconds = process_dataset();
 	end = clock();
 	r_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
 
