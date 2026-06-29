@@ -83,12 +83,12 @@ end = clock();
 total_seconds = (double)(end - start) / CLOCKS_PER_SEC;
 
 if (checksum == 0ul)
-    printf("impossible\n");
+	printf("impossible\n");
 
 printf("TOTAL seconds: %.6f\n", total_seconds);
 printf("BUILD_DATA seconds: %.6f\n", bt_seconds);
 printf("PROCESS seconds: %.6f\n", p_seconds);
 printf("REDUCE seconds: %.6f\n", r_seconds);
 
-return 0;
+return (0);
 }
