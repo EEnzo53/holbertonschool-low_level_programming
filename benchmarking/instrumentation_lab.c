@@ -72,8 +72,6 @@ static unsigned long reduce_checksum(void)
 
     unsigned long checksum;
 
-    initialize_data();
-
     start = clock();
 
     start_build = clock();
@@ -93,6 +91,9 @@ static unsigned long reduce_checksum(void)
 
     end = clock();
     elapsed_total = (double)(end - start) / CLOCKS_PER_SEC;
+
+    if (checksum == 0ul)
+        printf("impossible\n");
 
     printf("TOTAL seconds: %.6f\n", elapsed_total);
     printf("BUILD_DATA seconds: %.6f\n", elapsed_build);
