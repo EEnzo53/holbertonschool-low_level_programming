@@ -55,9 +55,9 @@ int main(void)
 	unsigned long checksum;
 	clock_t start;
 	clock_t end;
-	int bt_seconds;
+	double bt_seconds;
 	double r_seconds;
-	int p_seconds;
+	double p_seconds;
 	double total_seconds;
 
 	build_dataset();
