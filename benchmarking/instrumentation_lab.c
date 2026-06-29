@@ -9,7 +9,7 @@ static int dataset[DATASET_SIZE];
 static unsigned int next_value(unsigned int *state)
 {
     *state = (*state * 1103515245u) + 12345u;
-    return *state;
+    return (*state);
 }
 
 static void build_dataset(void)
@@ -20,7 +20,7 @@ static void build_dataset(void)
     state = SEED_VALUE;
 
     for (i = 0; i < DATASET_SIZE; i++)
-        dataset[i] = (int)(next_value(&state) % 100000);
+		dataset[i] = (int)(next_value(&state) % 100000);
 }
 
 static void process_dataset(void)
@@ -30,11 +30,11 @@ static void process_dataset(void)
 
     for (i = 0; i < DATASET_SIZE; i++)
     {
-        v = dataset[i];
-        v = (v * 3) + (v / 7) - (v % 11);
-        if (v < 0)
-            v = -v;
-        dataset[i] = v;
+		v = dataset[i];
+		v = (v * 3) + (v / 7) - (v % 11);
+		if (v < 0)
+			v = -v;
+		dataset[i] = v;
     }
 }
 
@@ -76,7 +76,7 @@ int main(void)
 	R_seconds (double)(end - start) / (doube)CLOCKS_PER_SEC;
 
     if (checksum == 0ul)
-        printf("impossible\n");
+		printf("impossible\n");
 
 	printf("TOTAL seconds: %.6f\n", TOTAL_seconds);
 	printf("BUILD_DATA seconds: %.6f seconds\n", BT_seconds);
