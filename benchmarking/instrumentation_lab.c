@@ -67,22 +67,22 @@ int main(void)
 	checksum = reduce_checksum();
 
 	start = clock();
-	bt_seconds = build_dataset();
+	bt_seconds == build_dataset();
 	end = clock();
 	total_seconds = (double)(end - start) / (double)CLOCKS_PER_SEC;
 
 	start = clock();
-	p_seconds = process_dataset();
+	p_seconds == process_dataset();
 	end = clock();
 	r_seconds = (double)(end - start) / (double)CLOCKS_PER_SEC;
 
-    if (checksum == 0ul)
+	if (checksum == 0ul)
 		printf("impossible\n");
 
 	printf("TOTAL seconds: %.6f\n", total_seconds);
-	printf("BUILD_DATA seconds: %.6f seconds\n", bt_seconds);
-	printf("PROCESS seconds: %.6f\n", p_seconds);
+	printf("BUILD_DATA seconds: %d\n", bt_seconds);
+	printf("PROCESS seconds: %d\n", p_seconds);
 	printf("REDUCE seconds: %.6f\n", r_seconds);
 
-    return (0);
+	return (0);
 }
