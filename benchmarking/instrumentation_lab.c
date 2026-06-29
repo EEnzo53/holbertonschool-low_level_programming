@@ -57,7 +57,8 @@ int main(void)
 	clock_t end;
 	double BT_seconds;
 	double R_seconds;
-	int P_seconds; TOTAL_seconds;
+	int P_seconds;
+	int TOTAL_seconds;
 
     /* Students must add clock-based timing and print required lines. */
 
@@ -73,7 +74,7 @@ int main(void)
 	start = clock();
 	P_seconds = count_even_single_pass();
 	end = clock();
-	R_seconds (double)(end - start) / (doube)CLOCKS_PER_SEC;
+	R_seconds (double)(end - start) / (double)CLOCKS_PER_SEC;
 
     if (checksum == 0ul)
 		printf("impossible\n");
