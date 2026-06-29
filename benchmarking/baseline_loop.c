@@ -29,5 +29,5 @@ int main(void)
 	printf("Iterations: %lu\n", (unsigned long)ITERATION_COUNT);
 	printf("Execution time: %.6f seconds\n", elapsed);
 
-	return 0;
+	return (0);
 }
