@@ -52,35 +52,43 @@ static unsigned long reduce_checksum(void)
 
 int main(void)
 {
-	unsigned long checksum;
 	clock_t start;
 	clock_t end;
-	double bt_seconds;
-	double r_seconds;
-	double p_seconds;
+
 	double total_seconds;
+	double bt_seconds;
+	double p_seconds;
+	double r_seconds;
 
-	build_dataset();
-	process_dataset();
-	checksum = reduce_checksum();
+	unsigned long checksum;
 
-	start = clock();
-	build_dataset();
-	end = clock();
-	total_seconds = (double)(end - start) / (double)CLOCKS_PER_SEC;
+start = clock();
+clock_t b_start = clock();
+build_dataset();
+clock_t b_end = clock();
+bt_seconds = (double)(b_end - b_start) / CLOCKS_PER_SEC;
 
-	start = clock();
-	process_dataset();
-	end = clock();
-	r_seconds = (double)(end - start) / (double)CLOCKS_PER_SEC;
+clock_t p_start = clock();
+process_dataset();
+clock_t p_end = clock();
+p_seconds = (double)(p_end - p_start) / CLOCKS_PER_SEC;
 
-	if (checksum == 0ul)
-		printf("impossible\n");
+clock_t r_start = clock();
+checksum = reduce_checksum();
+clock_t r_end = clock();
+r_seconds = (double)(r_end - r_start) / CLOCKS_PER_SEC;
 
-	printf("TOTAL seconds: %.6f\n", total_seconds);
-	printf("BUILD_DATA seconds: %.6f\n", bt_seconds);
-	printf("PROCESS seconds: %.6f\n", p_seconds);
-	printf("REDUCE seconds: %.6f\n", r_seconds);
 
-	return (0);
+end = clock();
+total_seconds = (double)(end - start) / CLOCKS_PER_SEC;
+
+if (checksum == 0ul)
+    printf("impossible\n");
+
+printf("TOTAL seconds: %.6f\n", total_seconds);
+printf("BUILD_DATA seconds: %.6f\n", bt_seconds);
+printf("PROCESS seconds: %.6f\n", p_seconds);
+printf("REDUCE seconds: %.6f\n", r_seconds);
+
+return 0;
 }
