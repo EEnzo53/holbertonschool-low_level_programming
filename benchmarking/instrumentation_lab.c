@@ -60,19 +60,17 @@ int main(void)
 	int p_seconds;
 	double total_seconds;
 
-    /* Students must add clock-based timing and print required lines. */
-
 	build_dataset();
 	process_dataset();
 	checksum = reduce_checksum();
 
 	start = clock();
-	bt_seconds == build_dataset();
+	bt_seconds = build_dataset();
 	end = clock();
 	total_seconds = (double)(end - start) / (double)CLOCKS_PER_SEC;
 
 	start = clock();
-	p_seconds == process_dataset();
+	p_seconds = process_dataset();
 	end = clock();
 	r_seconds = (double)(end - start) / (double)CLOCKS_PER_SEC;
 
