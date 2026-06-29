@@ -45,7 +45,7 @@ static unsigned long reduce_checksum(void)
 
     sum = 0;
     for (i = 0; i < DATASET_SIZE; i++)
-        sum = (sum * 131ul) + (unsigned long)dataset[i];
+		sum = (sum * 131ul) + (unsigned long)dataset[i];
 
     return (sum);
 }
