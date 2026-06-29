@@ -30,7 +30,7 @@ static void initialize_data(void)
 		}
 	}
 
-	return count;
+	return (count);
 }
 
 static int count_even_single_pass(void)
@@ -46,7 +46,7 @@ static int count_even_single_pass(void)
 			count++;
 	}
 
-	return count;
+	return (count);
 }
 
 int main(void)
