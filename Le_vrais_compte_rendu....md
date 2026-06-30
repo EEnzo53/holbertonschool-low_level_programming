@@ -14,7 +14,7 @@ Third (and last) Output;
 Iterations: 100000000
 Execution time: 0.301795 seconds
 
-We can note that the Iterations never change, that normal because this is the number of the repeat inside the loop
+We can note that the Iterations never change, that's normal because this is the number of the repeat inside the loop
 But we can notice that Execution time change, but we see later why.
 
 Second Exercice
@@ -38,7 +38,7 @@ Single-pass algorithm result: 25000
 Single-pass algorithm time: 0.000174 seconds
 
 So as we can see, again 1 result is always the same*1 (Naive algorithm result) but this time there an another one (Single-pass algorithm result) but this is for the same reason, this is a loops so the number will always be the same
-And now there is two output with the mention "time", the first one (Naive algorithm time) is or the global time for finish all of the programme, otherwise, "Single-pass algorithm time" is the time for a single loop inside the loop and the time is for know hom many times is take for finish, we will se later again why the result of time is not the same
+And now there is two output with the mention "time", the first one (Naive algorithm time) is or the global time for finish all of the programme, otherwise, "Single-pass algorithm time" is the time for a single loop inside the loop and the time is for know hom many times is take for finish, we will see later again why the result of time is not the same
 
 And now the last exercice, this one was a little bit more difficult, i had to instrument a multi-phase program and reason about where execution time is spent. And after finnaly finish, I compil with -gcc and this was my result;
 
