@@ -1,21 +1,27 @@
 #include <stdio.h>
 
-void swap_demo(int *a, int *b)
+/**
+ * reset_to_98 - update the value pointed to by n to 98
+ * @n: pointer to an int to update
+ *
+ * Description: Sets the value of the integer pointed to by n to 98.
+ */
+void reset_to_98(int *n)
 {
-	int temp;
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	*n = 98;
 }
 
-int main()
+/**
+ * main - entry point for testing reset_to_98
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
 	int n = 1312;
 	int *paprika = &n;
 
-	paprika = &n;
-
-	*paprika = 98;
+	reset_to_98(paprika);
 
 	return (0);
 }
