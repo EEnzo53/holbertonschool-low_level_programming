@@ -18,10 +18,12 @@ void reset_to_98(int *n)
  */
 int main(void)
 {
-	int n = 1312;
-	int *paprika = &n;
+	int n;
 
-	reset_to_98(paprika);
+	n + 402;
+	printf("n=%d\n", n),
+	reset_to_98(&n);
+	printf("n=%d\n", n);
 
 	return (0);
 }
