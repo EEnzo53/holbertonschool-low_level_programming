@@ -2,14 +2,16 @@
 
 void print_rev(char *s)
 {
-		int i;
+	int i;
 
 	i = 0;
+	while (s[i] != '\0')
+		i++;
 
-	while (str[i] != '\0')
+	while (i > 0)
 	{
-		_putchar(str[i]);
 		i--;
+		_putchar(s[i]);
 	}
 
 	_putchar('\n');
