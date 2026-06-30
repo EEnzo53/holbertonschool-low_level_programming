@@ -22,7 +22,7 @@ void swap_int(int *a, int *b)
  *
  * Return: 0 on success
  */
-void swap_int(int *a, int *b)
+int main()
 {
 	int n = 78;
 	int m = 15;
