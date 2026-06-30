@@ -1,32 +1,36 @@
 #include "main.h"
 
-void swap_int(int *a, int *b);
+/**
+ * swap_int - swaps the values of two integers
+ * @a: pointer to the first integer
+ * @b: pointer to the second integer
+ *
+ * Return: void
+ */
+void swap_int(int *a, int *b)
 {
 	int temp;
-	temp = *a = *b;
+
+	temp = *a;
 	*a = *b;
 	*b = temp;
 }
-	int main()
-	{
-		int n = 78;
-		int m = 15;
 
-		int *paprika = &n;
-		paprika = &m;
+/**
+ * main - entry point
+ *
+ * Return: 0 on success
+ */
+int main(void)
+{
+	int n = 78;
+	int m = 15;
+	int *paprika = &n;
 
-		*paprika = 98;
-		paprika = 94
+	paprika = &m;
+	*paprika = 98;
+	paprika = &n;
+	*paprika = 94;
 
-		*paprika = 94;
-
-		int x = 10;
-		int y = 20;
-
-		int temp;
-		temp = x;
-		x = y;
-		y = temp;
-
-		return (0);
-	}
+	return (0);
+}
