@@ -3,7 +3,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-    int len;
+	int len;
 	int i;
 	int j;
 
@@ -18,7 +18,7 @@ char *_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
-	if (dest[i] = '\0')
+	if (dest[i] <= '\0')
 	{
 		_putchar('\n');
 	}
