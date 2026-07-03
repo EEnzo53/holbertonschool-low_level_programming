@@ -6,24 +6,65 @@
  */
 int main(void)
 {
-	int choice = -1;
+	int choice = 1;
+
+	int a = 0;
+	int b = 0;
+	int result = 0;
 
 	printf("simple calculator\n");
+
 	while (choice != 0)
 	{
-		if (choice < 5 && choice > -1)
+		if (choice > -1 && choice < 5)
 		{
 		printf("1) add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\n");
 		}
 		printf("choice ?\n");
 		scanf("%d", &choice);
-		if (choice < -1 || choice > 5)
+		if (choice < 0 || choice > 4)
 		{
-			printf("Invalid Choice");
+			printf("Invalid Choice!\n");
 		}
 		if (choice == 0)
 		{
 			printf("Bye!");
+		}
+		else if (choice == 1)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+			printf("B: ");
+			scanf("%d", &b);
+			result = a + b;
+			printf("%d\n", result);
+		}
+		else if (choice == 2)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+			printf("B: ");
+			scanf("%d", &b);
+			result = a - b;
+			printf("%d\n", result);
+		}
+		else if (choice == 3)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+			printf("B: ");
+			scanf("%d", &b);
+			result = a * b;
+			printf("%d\n", result);
+		}
+		else if (choice == 4)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+			printf("B: ");
+			scanf("%d", &b);
+			result = a / b;
+			printf("%d\n", result);
 		}
 	}
 	return (0);
