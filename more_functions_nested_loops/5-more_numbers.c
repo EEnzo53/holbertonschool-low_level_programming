@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * more_numbers - prints numbers from 0 to 10, 15 times
+ */
 void more_numbers(void)
 {
 	int c;
