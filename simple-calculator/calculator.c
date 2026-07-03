@@ -8,7 +8,7 @@ int main(void)
 //	int b = 0;
 //	int result = 0;
 
-	printf ("Welcome to the calculator\n");
+	printf("simple calculator\n");
 	while (choice != 0)
 	{
 		printf("1) add\n2) Substact\n3) Multiply\n4) Divide\n0) Quit\n");
