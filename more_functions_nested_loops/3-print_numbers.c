@@ -2,8 +2,6 @@
 #include "main.h"
 /**
  * print_numbers - print number 0 to 9
- *
- * @c: valeur de c
  */
 
 void print_numbers(void)
