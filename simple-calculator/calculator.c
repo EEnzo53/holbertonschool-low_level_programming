@@ -63,6 +63,12 @@ int main(void)
 			scanf("%d", &a);
 			printf("B: ");
 			scanf("%d", &b);
+			if (b == 0)
+			{
+				printf("Error: division by zero\n");
+				continue;
+			}
+
 			result = a / b;
 			printf("%d\n", result);
 		}
