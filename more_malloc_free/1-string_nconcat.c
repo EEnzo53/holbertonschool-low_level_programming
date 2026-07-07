@@ -25,10 +25,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = strlen(s2);
 
 	result = malloc(strlen(s1) + n + 1);
-		if (result == NULL)
-		{
+
+	if (result == NULL)
+	{
 			return (NULL);
-		}
+	}
 
 	strcpy(result, s1);
 
