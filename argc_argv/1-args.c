@@ -1,0 +1,14 @@
+#include <stdio.h>
+/**
+ * main - Display numbers of arguments
+ * @argc: number of command line arguments
+ * @argv: array of command line arguments
+ *
+ * Return: Always 0
+ */
+int main(int argc, char *argv[])
+{
+	(void)argv[];
+	printf("%s\n", argc);
+	return (0);
+}
