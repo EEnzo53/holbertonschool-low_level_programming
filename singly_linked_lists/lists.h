@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stddef.h>
+
 /**
 * struct list_s - Singly linked list node
 * @str: String data
