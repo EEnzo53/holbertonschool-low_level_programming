@@ -1,4 +1,5 @@
 #include "hash_tables.h"
+#include <stdlib.h>
 
 /**
  * hash_djb2 - generate a hash value for a string using the djb2 algorithm
