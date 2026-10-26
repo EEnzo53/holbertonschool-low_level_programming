@@ -11,11 +11,12 @@
 int main(void)
 {
 	int n;
+	int calc;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int calc = n % 10;
+	calc = n % 10;
 
 	if (calc < 6 && calc != 0)
 	{
