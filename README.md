@@ -1,12 +1,12 @@
 # C - Hello, World
 
-Dossier du projet Holberton sur les premiers pas en langage C.
+Holberton project folder about the first steps in the C language.
 
-## C'est quoi le C ?
+## What is C?
 
-Le C est un langage de programmation **compilé** : le code doit être traduit en langage machine par un **compilateur** (`gcc`) avant d'être exécuté.
+C is a **compiled** programming language: the code must be translated into machine language by a **compiler** (`gcc`) before it can be run.
 
-## Le premier programme
+## The first program
 
 ```c
 #include <stdio.h>
@@ -18,27 +18,33 @@ int main(void)
 }
 ```
 
-- `#include <stdio.h>` : ajoute les fonctions d'affichage (`printf`, `puts`)
-- `main` : la fonction où le programme commence
-- `printf` : affiche du texte
-- `\n` : retour à la ligne
-- `return (0)` : le programme s'est bien terminé
+- `#include <stdio.h>`: adds the display functions (`printf`, `puts`)
+- `main`: the function where the program starts
+- `printf`: prints text
+- `\n`: new line
+- `return (0)`: the program ended successfully
 
-## Les étapes de la compilation
+## The compilation steps
 
-fichier.c → préprocesseur → compilateur → assembleur → exécutable
+file.c → preprocessor → compiler → assembler → executable
 
-1. **Préprocesseur** : traite les lignes qui commencent par `#`
-2. **Compilateur** : transforme le C en assembleur
-3. **Assembleur** : transforme l'assembleur en code machine (`.o`)
-4. **Éditeur de liens** : crée l'exécutable final
+1. **Preprocessor**: handles the lines that start with `#`
+2. **Compiler**: turns the C code into assembly
+3. **Assembler**: turns the assembly into machine code (`.o`)
+4. **Linker**: creates the final executable
 
-## Commandes utiles
+## Useful commands
 
-- `gcc fichier.c -o nom` : compile
-- `./nom` : lance le programme
-- `echo $?` : affiche le code de retour
-- `man gcc` : aide de gcc
+- `gcc file.c -o name`: compiles
+- `./name`: runs the program
+- `echo $?`: prints the exit status
+- `man gcc`: gcc help
+
+## Functions
+
+- `puts`: prints text with an automatic new line
+- `printf`: prints formatted text, without an automatic new line
+- `sizeof`: gives the size of a type in bytes
 
 ## Fonctions
 
