@@ -1,8 +1,4 @@
-# C - Hello, World
-
-Holberton project folder about the first steps in the C language.
-
-## What is C?
+# What is C?
 
 C is a **compiled** programming language: the code must be translated into machine language by a **compiler** (`gcc`) before it can be run.
 
