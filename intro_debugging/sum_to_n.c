@@ -26,6 +26,6 @@ int sum_to_n(int n)
  */
 int main(void)
 {
-	printf("%d\n", sum_to_n(10));
+	printf("%d\n", sum_to_n(55));
 	return (0);
 }
