@@ -10,12 +10,15 @@ void print_square(int size)
 	int horiz;
 	int verti;
 
-	for (verti = 1; verti <= size; verti++)
+	if (size != 0 && size > 0)
 	{
-		for (horiz = 1; horiz <= size; horiz++)
+		for (verti = 1; verti <= size; verti++)
 		{
-			_putchar('#');
+			for (horiz = 1; horiz <= size; horiz++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
