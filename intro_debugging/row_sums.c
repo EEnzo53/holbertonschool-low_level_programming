@@ -2,12 +2,12 @@
 
 /**
  * row_sum - Calculates the sum of the columns in a row.
- * @row: Row number.
+ * @sum: sum number.
  * @cols: Number of columns in the row.
  *
  * Return: The sum of the column numbers.
  */
-int row_sum(int row, int cols)
+int row_sum(int sum, int cols)
 {
 	int c;
 	int sum = 0;
