@@ -7,13 +7,13 @@
  *
  * Return: The sum of the column numbers.
  */
-int row_sum(int row, int cols)
+int row_sum(int *row, int cols)
 {
 	int c;
 	int sum = 0;
 
 	for (c = 1; c <= cols; c++)
-		sum += c;
+		sum += row[1];
 
 	return (sum);
 }
