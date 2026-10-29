@@ -7,13 +7,13 @@
  *
  * Return: The sum of the column numbers.
  */
-int row_sum(int *row, int cols)
+int row_sum(int row, int cols)
 {
 	int c;
 	int sum = 0;
 
 	for (c = 1; c <= cols; c++)
-		sum += row[1];
+		sum += row * c;
 
 	return (sum);
 }
@@ -29,10 +29,11 @@ int total_sum(int rows, int cols)
 {
 	int r;
 	int total = 0;
-	int current = 0;
+	int current;
 
 	for (r = 1; r <= rows; r++)
 	{
+		current = 0;
 		current += row_sum(r, cols);
 		total += current;
 	}
