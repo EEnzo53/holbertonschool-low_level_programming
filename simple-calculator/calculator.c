@@ -8,6 +8,9 @@
 int main(void)
 {
 	int choice;
+	int result;
+	int a;
+	int b;
 
 	printf("Simple Calculator\n1) Add\n"
 	"2) Substract\n3) Multiply\n"
@@ -22,6 +25,15 @@ int main(void)
 		{
 			printf("Bye!\n");
 			exit(0);
+		}
+		if (choice == 1)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+			printf("B: ");
+			scanf("%d", &b);
+			result = a + b;
+			printf("Result: %d\n", result);
 		}
 	}
 	else
