@@ -19,7 +19,7 @@ int main(void)
 	printf("Choice: ");
 	scanf("%d", &choice);
 
-	if (choice > -1 && choice < 4)
+	if (choice > -1 && choice < 5)
 	{
 		if (choice == 0)
 		{
@@ -51,6 +51,20 @@ int main(void)
 			printf("B: ");
 			scanf("%d", &b);
 			result = a * b;
+			printf("Result: %d\n", result);
+		}
+		if (choice == 4)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+			printf("B: ");
+			scanf("%d", &b);
+			if (b == 0)
+			{
+				printf("Error: division by zero\n");
+				exit(0);
+			}
+			result = a / b;
 			printf("Result: %d\n", result);
 		}
 	}
