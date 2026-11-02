@@ -36,7 +36,7 @@ Naive algorithm time: 3.892884 seconds
 Single-pass algorithm result: 25000
 Single-pass algorithm time: 0.000138 seconds
 
-The program takes globally the same time, with no big changes, but the second one is faster than the other two.
+The program takes globally the same time, with no big changes, but the second one is faster than the other two. The single-pass algorithm is thousands of times faster than the naive one, which shows how much the choice of algorithm matters.
 
 ---
 
@@ -62,12 +62,12 @@ The last one is much faster than the other two.
 ## 3. Relation Between Runtime and Energy Consumption
 
 A CPU that is used more indicates that a process takes more time to complete a simple task, which doubles the time needed for the consumption of energy and power.
-In C, a proxy is like pointers or function pointers.
+In C, a proxy is like pointers or function pointers. Since a longer runtime keeps the CPU active longer, runtime is a reasonable proxy for energy, even though it does not measure real power in watts.
 
 ## 4. Limitations of the Experiment
 
 I have one big limitation in my project 3: I didn't use `clock()` for the value of TOTAL. I preferred to add all the results together to get the sum of all of them.
-My results will never be the same as others', or even the same if I redo the programs, because they always depend on many things, like the heat of the software and the software as a whole.
+My results will never be the same as others', or even the same if I redo the programs, because they always depend on many things, like the heat of the software and the software as a whole. The precision of `clock()` is also limited for very short phases.
 
 ## 5. Practical Engineering Takeaway
 
