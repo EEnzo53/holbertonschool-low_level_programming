@@ -4,7 +4,7 @@
  * malloc_checked - Function that allocates memory with malloc
  * @b:
  *
- * Return: pointers to the allocated memory or 98 if malloc fails
+ * Return: pointers to the allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
@@ -15,13 +15,15 @@ void *malloc_checked(unsigned int b)
 	/*
 	* Allocates memory with malloc
 	*/
-	ptr = malloc(sizeof(char *) * b);
+	ptr = malloc(sizeof(char) * (b * 1));
 	/*
 	* look if malloc success or not, if not, return 98
 	*/
 	if (ptr == NULL)
+	{
+		free(ptr);
 		exit(98);
-
+	}
 	/*
 	* Return a pointer to allocated memory
 	*/
