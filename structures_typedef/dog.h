@@ -1,5 +1,5 @@
-#ifndef main_h
-#define main_h
+#ifndef dog_h
+#define dog_h
 
 /**
  * struct dog - Represents a dog.
@@ -13,5 +13,6 @@ struct dog
 	float age;
 	char *owner;
 };
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
