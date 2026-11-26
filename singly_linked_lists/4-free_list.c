@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stddef.h>
+#include <stdlib.h>
 /**
  * free_list - Frees a list_t list.
  * @head: Pointer to the first node in the list.
